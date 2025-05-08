@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>jsPlumb Toolkit - Hierarchy Layout demonstration</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit.css">
+        <link rel="stylesheet" href="node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit-demo-support.css">
+        <!-- /CSS -->
+        <link rel="stylesheet" href="./app.css">
+    </head>
+    <body>
+
+
+        <div style="display: flex" id="layout-main">
+            <!-- this is the main drawing area -->
+            <div class="jtk-demo-canvas canvas-wide">
+                <div id="canvas1" className="mb-2">
+                    <div class="label">Hierarchy layout with orthogonal edge routing</div>
+                </div>
+                <div id="canvas2" className="mb-2">
+                    <div class="label">Hierarchy layout with orthogonal edge routing, bus mode</div>
+                </div>
+                <div id="canvas3" className="mb-2">
+                    <div class="label">Hierarchy layout with direct edge routing</div>
+                </div>
+                <div id="canvas4">
+                    <div class="label">Vertical alignment, parent relative placement</div>
+                </div>
+                <div id="canvas5">
+                    <div class="label">Horizontal alignment, parent relative placement</div>
+                </div>
+                <div id="canvas6">
+                    <div class="label">Vertical alignment, centered placement</div>
+                </div>
+            </div>
+
+            <div class="jtk-demo-rhs">
+                <div class="description">
+                    <h3>Hierarchy Layout</h3>
+                    <p>
+                        This layout renders nodes in a hierarchy. It is a newer version of the original `Hierarchical` layout, which is now deprecated.
+                    </p>
+                    <p>For a full discussion of this layout, see <a href="https://docs.jsplumbtoolkit.com/toolkit/6.x/lib/layout-hierarchy" target="_blank">the Toolkit documentation</a></p>
+                </div>
+                <!-- the current dataset -->
+                <div class="jtk-demo-dataset"></div>
+            </div>
+        </div>
+
+        <!-- /content -->
+
+        <script src="_build/bundle.js"></script>
+
+    </body>
+</html>
